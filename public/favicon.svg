@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0c4a6e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="url(#bg)"/>
+
+  <!-- Bar 1 (left, shortest) — primary-200 -->
+  <rect x="88" y="340" width="96" height="120" rx="10" fill="#bae6fd" opacity="0.75"/>
+  <!-- Bar 2 (center) — primary-300 -->
+  <rect x="208" y="240" width="96" height="220" rx="10" fill="#7dd3fc" opacity="0.88"/>
+  <!-- Bar 3 (right, tallest) — primary-400 -->
+  <rect x="328" y="140" width="96" height="320" rx="10" fill="#38bdf8"/>
+
+  <!-- Trend line (green) connecting tops of bars -->
+  <polyline
+    points="136,340 256,240 376,136"
+    fill="none"
+    stroke="#22c55e"
+    stroke-width="20"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Arrow tip at end of trend line -->
+  <polygon points="376,80 418,136 334,136" fill="#22c55e"/>
+</svg>
